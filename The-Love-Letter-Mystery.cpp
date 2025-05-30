@@ -26,7 +26,24 @@ int theLoveLetterMystery(const std::string& s)
 }
 
 
-int theLoveLetterMystery(string s)
+int theLoveLetterMystery2(string s)
+{
+    int result = 0;
+    int n = s.length();
+
+    for (int i = 0, j = n - 1; i <= j; ++i, --j)
+    {
+        if (s[i] != s[j])
+        {
+            result += std::abs(s[i] - s[j]);
+        }
+    }
+
+    return result;
+}
+
+
+int theLoveLetterMystery3(string s)
 {
     int result = 0;
     int i = 0;
