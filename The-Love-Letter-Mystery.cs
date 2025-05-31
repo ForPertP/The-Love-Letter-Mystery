@@ -71,3 +71,12 @@ class Result
         return result;
     }    
 }
+
+
+
+class Solution
+{
+    public static void Main(string[] args)
+    {
+    }
+}
